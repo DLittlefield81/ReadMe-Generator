@@ -1,53 +1,96 @@
-// Array of questions for user to generate README.md
-const questions = [
+// TODO: Include packages needed for this application
+const fs = require("fs");
+const path = require("path");
+const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown")
 
+// TODO: Create an array of questions for user input
+const questions = [
     {
-        type: "input",
-        name: "github",
-        message: "What's your Github username?"
-    },
-    {
-        type: "input",
-        name: "email",
-        message: "What's your email?"
-    },
-    {
+        message: "Enter the Project title?",
         type: "input",
         name: "title",
-        message: "What's the name of your project?"
-    },
-    {
+      },
+      {
+        message: "Enter the GitHub URL for the Project?",
+        type: "input",
+        name: "repoURL",
+      },
+      {
+        message: "Enter a brief Project description?",
         type: "input",
         name: "description",
-        message: "Describe about your project:"
-    },
-    {
-        type: "list",
-        name: "license",
-        message: "What license does your project have?",
-        choices: ["MIT", "APACHE2.0", "Boost1.0", "GPL3.0", "BSD2", "BSD3", "None"]
-    },
-    {
+      },
+      {
+        message: "Enter how to install the Project?",
         type: "input",
-        name: "dependencies",
-        message: "Any dependencies to install?",
-        default: "npm i"
-    },
-    {
-        type: "input",
-        name: "test",
-        message: "What command should be run to run tests?",
-        default: "npm test"
-    },
-    {
+        name: "installation",
+      },
+      {
+        message: "Enter how to use the Project?",
         type: "input",
         name: "usage",
-        message: "What does the usage of this repo?",
-    },
-    {
+      },
+      {
+        message: "Choose the license that applies to the Project?",
+        type: "list",
+        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
+        name: "license",
+      },
+      {
+        message: "What needs to be known about contributing to the Project?",
         type: "input",
-        name: "contributors",
-        message: "Who are the contributors of this repo?",
-    }
-
+        name: "contributing",
+      },
+      {
+        message: "Enter any test instructions for the Project?",
+        type: "input",
+        name: "tests",
+      },
+      {
+        message: "Enter your GitHub Username?",
+        type: "input",
+        name: "username",
+      },
+      {
+        message: "Enter your email address.",
+        type: "input",
+        name: "email",
+      },
+      {
+        message: "What is the copyright year?",
+        type: "input",
+        name: "year",
+      },
+      {
+        message: "Type your full name?",
+        type: "input",
+        name: "name",
+      },
 ];
+
+// TODO: Create a function to write README file
+function writeFile(fileName,data) {
+
+    fs.writeFile(fileName, data, function(err) {
+ 
+    if (err) {
+        return console.log(err)
+    } else {
+        console.log("Success!")
+    }
+})
+}
+
+
+// TODO: Create a function to initialize app
+function init() {
+    inquirer.prompt(questions)
+    .then(function(response){
+        writeFile("README.md", generateMarkdown(response))
+    })
+}
+
+// Function call to initialize app
+init();
+

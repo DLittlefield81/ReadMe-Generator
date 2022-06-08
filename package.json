@@ -1,23 +1,14 @@
 {
-  "name": "readmegenerator",
+  "name": "static-site",
   "version": "1.0.0",
-  "description": "Follow these steps to install this project on your local machine.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DLittlefield81/ReadMe-Generator.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DLittlefield81/ReadMe-Generator/issues"
-  },
-  "homepage": "https://github.com/DLittlefield81/ReadMe-Generator#readme",
   "dependencies": {
-    "inquirer": "^8.2.4"
+    "inquirer": "^6.3.1"
   }
 }
