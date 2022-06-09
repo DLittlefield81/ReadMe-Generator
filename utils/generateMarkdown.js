@@ -66,18 +66,18 @@ function renderImages(title, images, repoName) {
     return `![${title}](./assets/images/${repoName}.gif)\n- ![wireframe](./assets/images/wireframe.png)`
   }
   if (images === 'Screenshot GIF with Video') {
-    return `![${title}](./assets/images/${repoName}.gif)\n- ![${title}](./assets/images/${repoName}.webm)`
+    return `![${title}](./assets/images/${repoName}.gif)\n- [CLICK HERE TO VIEW FULL VIDEO](./assets/images/${repoName}.webm)`
   }
   if (images === 'none') {
     return 'No Images On File'
   }
-}
-
+} 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
 # ${data.title}
 ${renderLicenseBadge(data.license)}
+
 
 ## Table of Contents
 - [Description](#description)
@@ -91,11 +91,12 @@ ${renderLicenseBadge(data.license)}
 - [License](#license)
 - [Copyright](#copyright)
 
+
 ## Description
 ${data.description}
 
-## Installation
 
+## Installation
 Follow these steps to install this project on your local machine.
 - Open Bash editor
 - mkdir ${data.repoName}
@@ -103,31 +104,38 @@ Follow these steps to install this project on your local machine.
 - git clone https://github.com/${data.username}/${data.repoName}
 - ${data.install}
 
+
 ## Usage
-After cloning this repository the user should...
+After cloning this repository...
 ${data.usage}
+
 
 ## Application
 Link to Deployed Application: ${data.deployedURL}
 
+
 ## Images
 ${renderImages(data.title, data.images, data.repoName)}
 
+
 ## Tests
 ${data.tests}
+
 
 ## Questions
 - Username: ${data.username}
 - GitHub: https://github.com/${data.username}/
 - Email: ${data.email}
 
+
 ## Contributing
+If you would like to contribute...
 ${data.contributing}
 
-## License
 
-- ${renderLicenseSection(data.license)}
-- ${renderLicenseBadge(data.license)} - ${renderLicenseLink(data.license)} 
+${renderLicenseSection(data.license)}
+
+
 
 ##Copyright
 (c) Copyright ${data.year} ${data.name}

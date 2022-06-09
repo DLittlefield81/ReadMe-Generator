@@ -23,36 +23,34 @@ Follow these steps to install this project on your local machine.
 - Open Bash editor
 - mkdir ReadMe-Generator
 - cd ReadMe-Generator
-- git clone https://github.com/GitHub/ReadMe-Generator
+- git clone https://github.com/Dlittlefield81/ReadMe-Generator
 - npm install
 
 ## Usage
 After cloning this repository To use this project
-Email me
+Open bash terminal - node index.js
 
 ## Application
 Link to Deployed Application: none
 
 ## Images
 ![README Generator](./assets/images/ReadMe-Generator.png)
-
+[CLICK HERE TO VIEW FULL VIDEO](./assets/images/ReadMe-Generator.webm)
 ## Tests
 Email me
 
 ## Questions
 - Username: GitHub
-- GitHub: https://github.com/GitHub/
+- GitHub: https://github.com/DLittlefield81/
 - Email: none@none.com
 
 ## Contributing
 Email me
 
-## License
 
-- ## License
-   This project is licenses under the General Public License v3.0 license.
-- ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg) - [License: GNU Affero General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0) 
+## License
+- This project is licenses under the General Public License v3.0 license.
+
 
 ##Copyright
-(c) Copyright 2022 Full Stack
-    
+(c) Copyright 2022 Dennis Littlefield
