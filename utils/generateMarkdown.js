@@ -101,7 +101,7 @@ Follow these steps to install this project on your local machine.
 - Open Bash editor
 - mkdir ${data.repoName}
 - cd ${data.repoName}
-- git clone https://github.com/${data.username}/${data.repoName}
+- git clone https://github.com/${data.username}/${data.repoName}.git
 - ${data.install}
 
 
