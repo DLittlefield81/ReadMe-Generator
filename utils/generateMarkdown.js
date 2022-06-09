@@ -93,7 +93,7 @@ ${renderLicenseBadge(data.license)}
 
 
 ## Description
-${data.description}
+- ${data.description}
 
 
 ## Installation
@@ -111,15 +111,15 @@ Follow these steps to install this project on your local machine.
 
 
 ## Application
-Link to Deployed Application: ${data.deployedURL}
+- Link to Deployed Application: ${data.deployedURL}
 
 
 ## Images
-${renderImages(data.title, data.images, data.repoName)}
+- ${renderImages(data.title, data.images, data.repoName)}
 
 
 ## Tests
-${data.tests}
+- ${data.tests}
 
 
 ## Questions
@@ -129,8 +129,8 @@ ${data.tests}
 
 
 ## Contributing
-If you would like to contribute...
-${data.contributing}
+- If you would like to contribute...
+- ${data.contributing}
 
 
 ${renderLicenseSection(data.license)}

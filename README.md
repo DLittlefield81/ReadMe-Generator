@@ -15,7 +15,7 @@
 - [Copyright](#copyright)
 
 ## Description
-README Generator will help you develop fast efficient readme's without all the fuss.
+- README Generator will help you develop fast efficient readme's without all the fuss.
 
 ## Installation
 
@@ -31,13 +31,13 @@ Follow these steps to install this project on your local machine.
 - Open bash terminal enter 'node index.js'
 
 ## Application
-Link to Deployed Application: none
+- Link to Deployed Application: none
 
 ## Images
 - ![README Generator](./assets/images/ReadMe-Generator.gif)
 - [CLICK HERE TO VIEW FULL VIDEO](./assets/images/ReadMe-Generator.webm)
 ## Tests
-Email me
+- Email me
 
 ## Questions
 - Username: GitHub
@@ -45,7 +45,7 @@ Email me
 - Email: Littlefield.Dennis@outlook.com
 
 ## Contributing
-Email me
+- Email me
 
 
 ## License
