@@ -2,6 +2,7 @@
 # README Generator
 ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
+
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
@@ -14,43 +15,54 @@
 - [License](#license)
 - [Copyright](#copyright)
 
+
 ## Description
-- README Generator will help you develop fast efficient readme's without all the fuss.
+- Readme generator will create your document with ease.
+
 
 ## Installation
-
 Follow these steps to install this project on your local machine.
 - Open Bash editor
 - mkdir ReadMe-Generator
 - cd ReadMe-Generator
-- git clone https://github.com/Dlittlefield81/ReadMe-Generator
+- git clone https://github.com/DLittlefield81/ReadMe-Generator
 - npm install
+
 
 ## Usage
 - After cloning this repository...
-- Open bash terminal enter 'node index.js'
+- open bash editor and enter 'node index.js'
+
 
 ## Application
 - Link to Deployed Application: none
 
+
 ## Images
-- ![README Generator](./assets/images/ReadMe-Generator.gif)
+- -![README Generator](./assets/images/ReadMe-Generator.gif)
 - [CLICK HERE TO VIEW FULL VIDEO](./assets/images/ReadMe-Generator.webm)
+
+
 ## Tests
-- Email me
+- Email Me
+
 
 ## Questions
-- Username: GitHub
+- Username: DLittlefield81
 - GitHub: https://github.com/DLittlefield81/
-- Email: Littlefield.Dennis@outlook.com
+- Email: none@none.com
+
 
 ## Contributing
+- If you would like to contribute...
 - Email me
 
 
 ## License
-- This project is licenses under the General Public License v3.0 license.
+   This project is licenses under the General Public License v3.0 license.
+
 
 
 ## Copyright
-- © Copyright 2022 Dennis Littlefield
+- © Copyright 2022 Dennis L
+    
