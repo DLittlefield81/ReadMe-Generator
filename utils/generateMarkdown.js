@@ -106,8 +106,8 @@ Follow these steps to install this project on your local machine.
 
 
 ## Usage
-After cloning this repository...
-${data.usage}
+-After cloning this repository...
+-${data.usage}
 
 
 ## Application

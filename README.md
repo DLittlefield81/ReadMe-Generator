@@ -27,8 +27,8 @@ Follow these steps to install this project on your local machine.
 - npm install
 
 ## Usage
-After cloning this repository To use this project
-Open bash terminal - node index.js
+-After cloning this repository...
+-Open bash terminal enter 'node index.js'
 
 ## Application
 Link to Deployed Application: none
