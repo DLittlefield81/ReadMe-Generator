@@ -137,8 +137,8 @@ ${renderLicenseSection(data.license)}
 
 
 
-##Copyright
-(c) Copyright ${data.year} ${data.name}
+## Copyright
+- © Copyright ${data.year} ${data.name}
     `;
 
 

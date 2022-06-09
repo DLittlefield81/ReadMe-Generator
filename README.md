@@ -52,5 +52,5 @@ Email me
 - This project is licenses under the General Public License v3.0 license.
 
 
-##Copyright
-(c) Copyright 2022 Dennis Littlefield
+## Copyright
+- © Copyright 2022 Dennis Littlefield
