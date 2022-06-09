@@ -45,7 +45,7 @@ const questions = [
   {
     message: "IMAGES - Would you like to display any images in your repo?",
     type: "list",
-    choices: ['Screenshot PNG', 'Screenshot GIF', 'Screenshot PNG with Wireframe', 'Screenshot GIF with Wireframe', 'None'],
+    choices: ['Screenshot PNG', 'Screenshot GIF', 'Screenshot PNG with Wireframe', 'Screenshot GIF with Wireframe', 'Screenshot GIF with Video', 'None'],
     name: "images",
   },
   {
@@ -54,7 +54,7 @@ const questions = [
     name: "description",
   },
   {
-    message: "USAGE - Enter how to use the project:",
+    message: "USAGE - Complete this sentence: After cloning the repository users should...",
     type: "input",
     name: "usage",
   },

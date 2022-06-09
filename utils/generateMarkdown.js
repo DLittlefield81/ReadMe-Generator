@@ -52,18 +52,21 @@ function renderLicenseSection(license) {
 }
 
 //function to create repo images
-function renderImages(title, images) {
+function renderImages(title, images, repoName) {
   if (images === 'Screenshot PNG') {
-    return`![${title}](assets/images/${title}.png)`
+    return `![${title}](./assets/images/${repoName}.png)`
   }
   if (images === 'Screenshot PNG with Wireframe') {
-    return `![${title}](assets/images/${title}.png)\n- ![wireframe](assets/images/wireframe.png)`
+    return `![${title}](./assets/images/${repoName}.png)\n- ![wireframe](,/assets/images/wireframe.png)`
   }
   if (images === 'Screenshot GIF') {
-    return `![${title}](assets/images/${title}.gif)`
+    return `![${title}](./assets/images/${repoName}.gif)`
   }
   if (images === 'Screenshot GIF with Wireframe') {
-    return `![${title}](assets/images/${title}.gif)\n- ![wireframe](assets/images/wireframe.png)`
+    return `![${title}](./assets/images/${repoName}.gif)\n- ![wireframe](./assets/images/wireframe.png)`
+  }
+  if (images === 'Screenshot GIF with Video') {
+    return `![${title}](./assets/images/${repoName}.gif)\n- ![${title}](./assets/images/${repoName}.webm)`
   }
   if (images === 'none') {
     return 'No Images On File'
@@ -74,18 +77,19 @@ function renderImages(title, images) {
 function generateMarkdown(data) {
   return `
 # ${data.title}
-
 ${renderLicenseBadge(data.license)}
 
-
 ## Table of Contents
-       [Description](#description)
-       [Installation](#installation)
-       [Usage](#usage)
-       [License](#license)
-       [Contributing](#contributing)
-       [Tests](#tests)
-       [Questions](#questions)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Application](#application)
+- [images](#images)
+- [Tests](#tests)
+- [questions](#questions)
+- [Contributing](#contributing)
+- [License](#license)
+- [Copyright](#copyright)
 
 ## Description
 ${data.description}
@@ -93,39 +97,40 @@ ${data.description}
 ## Installation
 
 Follow these steps to install this project on your local machine.
-
 - Open Bash editor
-      - mkdir ${data.repoName}
-    - cd ${data.repoName}
-    - git clone https://github.com/${data.username}/${data.repoName}
-    - ${data.install}
+- mkdir ${data.repoName}
+- cd ${data.repoName}
+- git clone https://github.com/${data.username}/${data.repoName}
+- ${data.install}
 
 ## Usage
-${data.usageURL}
+After cloning this repository the user should...
+${data.usage}
 
 ## Application
-
 Link to Deployed Application: ${data.deployedURL}
 
-${renderImages( data.title,data.images )}
+## Images
+${renderImages(data.title, data.images, data.repoName)}
 
 ## Tests
 ${data.tests}
 
 ## Questions
-      - ${data.username}
-    - https://github.com/${data.username}/
-    - Please contact me for additional questions ${data.email}
+- Username: ${data.username}
+- GitHub: https://github.com/${data.username}/
+- Email: ${data.email}
 
-## Credits
+## Contributing
 ${data.contributing}
 
 ## License
 
-      - ${renderLicenseSection(data.license)}
-    - ${renderLicenseLink(data.license)} 
+- ${renderLicenseSection(data.license)}
+- ${renderLicenseBadge(data.license)} - ${renderLicenseLink(data.license)} 
 
-##(c) Copyright ${data.year} ${data.name}
+##Copyright
+(c) Copyright ${data.year} ${data.name}
     `;
 
 
