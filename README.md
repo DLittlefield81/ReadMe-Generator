@@ -21,9 +21,7 @@
 Follow these steps to install this project on your local machine.
 
 - Open Bash editor
-- mkdir 
-- cd 
-- git clone https://github.com//
+- npm i
 
 ## Usage
 undefined
@@ -33,7 +31,6 @@ undefined
 Link to Deployed Application: 
 
 - ![](assets/images/.png)
-- ![wireframe](assets/images/wireframe.png)
 
 ## Tests
 
