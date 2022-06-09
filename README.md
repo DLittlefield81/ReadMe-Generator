@@ -34,15 +34,15 @@ Open bash terminal - node index.js
 Link to Deployed Application: none
 
 ## Images
-![README Generator](./assets/images/ReadMe-Generator.png)
-[CLICK HERE TO VIEW FULL VIDEO](./assets/images/ReadMe-Generator.webm)
+- ![README Generator](./assets/images/ReadMe-Generator.gif)
+- [CLICK HERE TO VIEW FULL VIDEO](./assets/images/ReadMe-Generator.webm)
 ## Tests
 Email me
 
 ## Questions
 - Username: GitHub
 - GitHub: https://github.com/DLittlefield81/
-- Email: none@none.com
+- Email: Littlefield.Dennis@outlook.com
 
 ## Contributing
 Email me

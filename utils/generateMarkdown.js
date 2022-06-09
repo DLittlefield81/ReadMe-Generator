@@ -54,19 +54,19 @@ function renderLicenseSection(license) {
 //function to create repo images
 function renderImages(title, images, repoName) {
   if (images === 'Screenshot PNG') {
-    return `![${title}](./assets/images/${repoName}.png)`
+    return `-![${title}](./assets/images/${repoName}.png)`
   }
   if (images === 'Screenshot PNG with Wireframe') {
-    return `![${title}](./assets/images/${repoName}.png)\n- ![wireframe](,/assets/images/wireframe.png)`
+    return `-![${title}](./assets/images/${repoName}.png)\n- ![wireframe](,/assets/images/wireframe.png)`
   }
   if (images === 'Screenshot GIF') {
-    return `![${title}](./assets/images/${repoName}.gif)`
+    return `-![${title}](./assets/images/${repoName}.gif)`
   }
   if (images === 'Screenshot GIF with Wireframe') {
-    return `![${title}](./assets/images/${repoName}.gif)\n- ![wireframe](./assets/images/wireframe.png)`
+    return `-![${title}](./assets/images/${repoName}.gif)\n- ![wireframe](./assets/images/wireframe.png)`
   }
   if (images === 'Screenshot GIF with Video') {
-    return `![${title}](./assets/images/${repoName}.gif)\n- [CLICK HERE TO VIEW FULL VIDEO](./assets/images/${repoName}.webm)`
+    return `-![${title}](./assets/images/${repoName}.gif)\n- [CLICK HERE TO VIEW FULL VIDEO](./assets/images/${repoName}.webm)`
   }
   if (images === 'none') {
     return 'No Images On File'
