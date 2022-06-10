@@ -23,7 +23,7 @@ Follow these steps to install this project on your local machine.
 - Open Bash editor
 - mkdir ReadMe-Generator
 - cd ReadMe-Generator
-- git clone https://github.com/Dlittlefield81/ReadMe-Generator
+- git clone https://github.com/Dlittlefield81/ReadMe-Generator.git
 - npm install
 
 ## Usage
